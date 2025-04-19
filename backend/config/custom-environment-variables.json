@@ -1,0 +1,11 @@
+{
+    "app":{
+        "name":"APP_NAME",
+        "port": "APP_PORT",
+        "secret": "APP_SECRET"
+
+    },
+    "db":{
+        "password": "DB_PASSWORD"
+    }
+}

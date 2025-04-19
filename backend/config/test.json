@@ -1,0 +1,20 @@
+{
+    "app": {
+      "name": "VacationTestApp",
+      "port": 3001,
+      "jwtSecret": "test-secret"
+    },
+    "sequelize": {
+      "sync": {
+        "force": true
+      }
+    },
+    "db": {
+      "host": "localhost",
+      "username": "root",
+      "password": "",
+      "database": "vacations",
+      "dialect": "mysql"
+    }
+  }
+  

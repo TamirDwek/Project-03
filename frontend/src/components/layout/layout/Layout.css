@@ -1,0 +1,31 @@
+.Layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .LayoutContent {
+    display: flex;
+    flex: 1;
+    background-color: #f5f5f5;
+  }
+  
+  .SideBar {
+    width: 220px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+  }
+  
+  .MainContent {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  

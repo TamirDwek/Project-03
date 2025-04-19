@@ -1,0 +1,35 @@
+{
+  "app": {
+    "port": "3003",
+    "name": "vacations",
+    "secret": "MySecret",
+    "jwtSecret": "MyJwtSecret"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "vacations"
+  },
+  "sequelize": {
+    "logging": true,
+    "sync": {
+      "force": false
+    }
+  },
+"s3": {
+  "bucket": "il.co.johnbryce.tamirdw",
+  "isLocalstack": true,
+  "connection": {
+    "region": "us-east-1",
+    "forcePathStyle": true,
+    "endpoint": "http://localhost:4566",
+    "credentials": {
+      "accessKeyId": "test",
+      "secretAccessKey": "test"
+    }
+  }
+}
+
+}
