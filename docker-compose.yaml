@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   database:
@@ -33,22 +33,6 @@ services:
       - ./backend:/app
     working_dir: /app
     command: sh -c "npm install && npm run dev"
-
-  io:
-    container_name: vacations-compose-io
-    build: ./io
-    ports:
-      - 3002:3002
-    environment:
-      - NODE_ENV=compose
-    depends_on:
-      database:
-        condition: service_healthy
-    volumes:
-      - ./io:/app
-    working_dir: /app
-    command: sh -c "npm install && npm run dev"
-
   frontend:
     container_name: vacations-compose-frontend
     build: ./frontend

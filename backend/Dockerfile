@@ -3,13 +3,12 @@ FROM node:22-alpine
 WORKDIR /app
 
 COPY ./package*.json ./
-
 RUN npm install
 
-COPY ./ ./
+COPY . .
 
 RUN npm run build
 
 RUN rm -rf ./src
 
-CMD npm start 
+CMD ["npx", "nodemon", "--exec", "ts-node", "src/app.ts"]
